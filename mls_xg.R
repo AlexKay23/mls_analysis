@@ -66,4 +66,3 @@ mls_xgs_long$time <- format(ymd_hms(mls_xgs_long$date_time_utc), "%H:%M:%S")
 
 mls_xgs_long <- mls_xgs_long %>% 
   mutate(season = case_when(TRUE ~ format(date, "%Y")))
-
