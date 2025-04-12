@@ -11,7 +11,6 @@ mls_xgs <- asa_client$get_game_xgoals(leagues = "mls")
 mls_goals_added <- asa_client$get_player_goals_added(leagues = "mls")
 
 
-
 mls_xgs <- mls_xgs %>% 
   rename(team_id = home_team_id) %>% 
   left_join(.,mls_teams) %>% 
